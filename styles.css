@@ -1,0 +1,142 @@
+/* Estilo General */
+body {
+    font-family: "Merriweather", serif; /* Fuente */
+    background-color: #0d0d0d; /* Fondo */
+    color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #1a1a1a, #333333); /* Degradado oscuro */
+    color: #f4c542;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4c542;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #444444; /* Fondo */
+    color: #f4c542;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra al pasar */
+}
+
+/* Secciones */
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #1a1a1a; /* Fondo de las secciones más claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #f4c542;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f4c542; /* Línea de debajo del título */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section p {
+    margin: 10px 0;
+    color: #e2e2e2;
+}
+
+ul li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+ul li strong {
+    color: #f4c542;
+}
+
+/* Botones */
+button {
+    background-color: #f4c542;
+    color: #0d0d0d;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f7da6a;
+    transform: scale(1.1); /* Efecto de zoom */
+    box-shadow: 0 4px 10px rgba(255, 223, 102, 0.7);
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1a1a1a;
+    color: #e2e2e2;
+    margin-top: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.8);
+}
+
+footer p:hover {
+    color: #f4c542; /* Texto dorado al pasar el ratón */
+}
+
+/* Animación para que la imagen suba desde arriba */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%); /* Inicia fuera de la pantalla, desde arriba */
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        transform: translateY(0); /* Llega a su posición final */
+        opacity: 1; /* Aparece completamente */
+    }
+}
+
+/* Animación a las imágenes */
+img {
+    animation: slideDown 1s ease-out; /* Duración y suavidad de la animación */
+    width: 100%; /* Escala */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra */
+    margin-top: 20px; /* Espaciado superior */
+}
