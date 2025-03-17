@@ -18,6 +18,12 @@
                 <li><a href="jefes.html">Jefes</a></li>
                 <li><a href="encuesta.html">Encuesta</a></li>
             </ul>
+            <button id="toggle-theme">Cambiar Modo</button>
+                <script>
+                    document.getElementById('toggle-theme').addEventListener('click', function() {
+                        document.body.classList.toggle('light-mode');
+                    });
+                </script>
         </nav>
     </header>
 
